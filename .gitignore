@@ -9,6 +9,7 @@ cmake-build-*/
 # IntelliJ
 out/
 dist/
+Rock-Paper-Scissor.iml
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
