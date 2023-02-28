@@ -1,0 +1,4 @@
+.hero {
+    -fx-background-color: white;
+    -fx-background-image: url("../../../../Resources/background.png");
+}
