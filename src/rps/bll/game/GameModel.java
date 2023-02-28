@@ -48,6 +48,7 @@ public class GameModel {
         var last = moves.stream().reduce((first, second) -> second).orElse(null);
 
         if(last == null) return;
+        if(last.getType() == ResultType.Tie) return;
         if(last.getWinnerPlayer().getPlayerType() == PlayerType.Human) playerWins++; else aiWins++;
 
         updateScoreLabelText();
