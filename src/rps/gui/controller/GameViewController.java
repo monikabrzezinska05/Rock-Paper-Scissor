@@ -22,6 +22,12 @@ public class GameViewController implements Initializable {
     @FXML
     public Label scoreLabel;
 
+    @FXML
+    public Label aiNameLabel;
+
+    @FXML
+    public Label playerNameLabel;
+
     /**
      * Initializes the controller class.
      */
@@ -29,6 +35,9 @@ public class GameViewController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         model = new GameModel();
         scoreLabel.textProperty().bind(model.getScoreTextProperty());
+
+        aiNameLabel.textProperty().bind(model.getAiNameProperty());
+        playerNameLabel.textProperty().bind(model.getPlayerNameProperty());
     }
 
     public void handleRock(ActionEvent actionEvent) {

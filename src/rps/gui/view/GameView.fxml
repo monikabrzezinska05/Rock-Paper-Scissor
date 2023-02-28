@@ -53,12 +53,12 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="349.0" layoutY="34.0" text="Computer">
+      <Label fx:id="aiNameLabel" layoutX="349.0" layoutY="34.0" text="Computer">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="194.0" layoutY="34.0" text="Player">
+      <Label fx:id="playerNameLabel" layoutX="194.0" layoutY="34.0" text="Player">
          <font>
             <Font size="18.0" />
          </font>

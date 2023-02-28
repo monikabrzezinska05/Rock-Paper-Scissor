@@ -33,7 +33,7 @@ public class GameModel {
         return playerName;
     }
 
-    public StringProperty getAiName() {
+    public StringProperty getAiNameProperty() {
         return aiName;
     }
 
