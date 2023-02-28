@@ -15,7 +15,7 @@ public class GameModel {
 
     private StringProperty scoreText;
 
-    private int playerWins = 0, aiWins = 0;
+    private int playerWins = 0, aiWins = 0, ties = 0;
 
     public GameModel() {
         IPlayer player = new Player("Player", PlayerType.Human);
@@ -48,7 +48,11 @@ public class GameModel {
         var last = moves.stream().reduce((first, second) -> second).orElse(null);
 
         if(last == null) return;
-        if(last.getType() == ResultType.Tie) return;
+        if(last.getType() == ResultType.Tie) {
+            ties++;
+            return;
+        }
+
         if(last.getWinnerPlayer().getPlayerType() == PlayerType.Human) playerWins++; else aiWins++;
 
         updateScoreLabelText();
