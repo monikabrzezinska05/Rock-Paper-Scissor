@@ -7,24 +7,38 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="hero" stylesheets="@GameView.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rps.gui.controller.GameViewController">
    <children>
       <HBox layoutX="38.0" layoutY="330.0" prefHeight="61.0" prefWidth="506.0">
          <children>
-            <Button fx:id="btnRock" mnemonicParsing="false" onAction="#handleRock" text="Rock">
-               <HBox.margin>
-                  <Insets right="10.0" />
-               </HBox.margin>
+            <Button fx:id="btnRock" mnemonicParsing="false" onAction="#handleRock" styleClass="rpsButton">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="rock.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </Button>
-            <Button fx:id="btnPaper" mnemonicParsing="false" onAction="#handlePaper" text="Paper">
-               <HBox.margin>
-                  <Insets right="10.0" />
-               </HBox.margin>
+            <Button fx:id="btnPaper" mnemonicParsing="false" onAction="#handlePaper" styleClass="rpsButton" >
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="paper.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </Button>
-            <Button fx:id="btnScissor" mnemonicParsing="false" onAction="#handleScissor" text="Scissor">
-               <HBox.margin>
-                  <Insets right="10.0" />
-               </HBox.margin>
+            <Button fx:id="btnScissor" mnemonicParsing="false" onAction="#handleScissor" styleClass="rpsButton" >
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="scissors.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </Button>
          </children>
          <opaqueInsets>
