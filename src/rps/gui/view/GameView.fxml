@@ -5,7 +5,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rps.gui.controller.GameViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="gameview.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rps.gui.controller.GameViewController">
    <children>
       <Label layoutX="86.0" layoutY="190.0" text="Now you can start to build the GUI and implement an awesome game">
          <font>
